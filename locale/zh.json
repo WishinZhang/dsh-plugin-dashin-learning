@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "DashinLearning",
+    "description": "以本地文件夹为学习项目、Markdown + JSON 为唯一数据源的个性化学习系统：掌握度由测验证据算出，闸门决定进阶，间隔重复排期。"
+  },
+  "panel": "DashinLearning"
+}

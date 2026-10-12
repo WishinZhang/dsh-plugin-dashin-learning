@@ -1,0 +1,8 @@
+# Insert the learning plugin into the composed profile.
+#
+# Optional: pin the project directory instead of letting the plugin resolve the
+# current workspace root. `config` also flows into apply() and its API responses.
+- insert:
+    - id: dashin-learning
+      name: '@local/dashin-learning'
+      config: {}

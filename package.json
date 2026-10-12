@@ -1,0 +1,41 @@
+{
+  "name": "@local/dashin-learning",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DashinLearning：本地文件夹即学习项目，Markdown + JSON 落盘，Agent 工具 + 全屏学习面板",
+  "type": "module",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "host/engine.js",
+    "host/impl.js",
+    "locale/*.json",
+    "README.md"
+  ],
+  "meta": {
+    "title": "DashinLearning",
+    "description": "以本地文件夹为学习项目、Markdown + JSON 为唯一数据源的个性化学习系统：掌握度由测验证据算出，闸门决定进阶，间隔重复排期。"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
